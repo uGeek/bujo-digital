@@ -1,0 +1,6 @@
+* bujo-digital
+Bullet Journal Digital + Diario, basado en Org-Mode
+
+1) Ejecuta el script *./bujo.sh*
+2) Introduce el año
+3) Ya tienes tu plantilla de Bullet Journal y Diario para Org Mode!!!
