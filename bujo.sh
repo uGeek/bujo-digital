@@ -19,8 +19,8 @@ echo "** CLAVES
 *** Tarea Normal 
 *** *Tarea Importante* 
 *** / Tarea Empezada 
-*** > Tarea viene de otro día 
-*** < tarea sale a otro día 
+*** > Tarea Viene de Otro Día 
+*** < Tarea Migra a Otro Día 
 *** +Hecho+
 *** # Nota" >> bujo-$ANO.org
 
