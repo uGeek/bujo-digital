@@ -286,7 +286,7 @@ done
 #################################################################################################################
 
 
-echo "* DIARIO" >> bujo-$ANO.org
+echo "* DAILY LOG" >> bujo-$ANO.org
 
 
 
@@ -295,7 +295,7 @@ echo "* DIARIO" >> bujo-$ANO.org
 FECHA_INICIO=$ANO-01-01
 FECHA_FINAL=$ANO-01-$ENERO
 
-echo "** ENERO" >> bujo-$ANO.org
+echo "** GENER" >> bujo-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
@@ -313,7 +313,7 @@ done
 FECHA_INICIO=$ANO-02-01
 FECHA_FINAL=$ANO-02-$FEBRERO
 
-echo "** FEBRERO" >> bujo-$ANO.org
+echo "** FEBRER" >> bujo-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
@@ -331,7 +331,7 @@ done
 FECHA_INICIO=$ANO-03-01
 FECHA_FINAL=$ANO-03-$MARZO
 
-echo "** MARZO" >> bujo-$ANO.org
+echo "** MARÇ" >> bujo-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
@@ -366,7 +366,7 @@ done
 FECHA_INICIO=$ANO-05-01
 FECHA_FINAL=$ANO-05-$MAYO
 
-echo "** MAYO" >> bujo-$ANO.org
+echo "** MAIG" >> bujo-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
@@ -384,7 +384,7 @@ done
 FECHA_INICIO=$ANO-06-01
 FECHA_FINAL=$ANO-06-$JUNIO
 
-echo "** JUNIO" >> bujo-$ANO.org
+echo "** JUNY" >> bujo-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
@@ -402,7 +402,7 @@ done
 FECHA_INICIO=$ANO-07-01
 FECHA_FINAL=$ANO-07-$JULIO
 
-echo "** JULIO" >> bujo-$ANO.org
+echo "** JULIOL" >> bujo-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
@@ -421,7 +421,7 @@ done
 FECHA_INICIO=$ANO-08-01
 FECHA_FINAL=$ANO-08-$AGOSTO
 
-echo "** AGOSTO" >> bujo-$ANO.org
+echo "** AGOST" >> bujo-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
@@ -440,7 +440,7 @@ done
 FECHA_INICIO=$ANO-09-01
 FECHA_FINAL=$ANO-09-$SEPTIEMBRE
 
-echo "** SEPTIEMBRE" >> bujo-$ANO.org
+echo "** SEPTEMBRE" >> bujo-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
@@ -477,7 +477,7 @@ done
 FECHA_INICIO=$ANO-11-01
 FECHA_FINAL=$ANO-11-$NOVIEMBRE
 
-echo "** NOVIEMBRE" >> bujo-$ANO.org
+echo "** NOVEMBRE" >> bujo-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
@@ -496,7 +496,7 @@ done
 FECHA_INICIO=$ANO-12-01
 FECHA_FINAL=$ANO-12-$DICIEMBRE
 
-echo "** DICIEMBRE" >> bujo-$ANO.org
+echo "** DESEMBRE" >> bujo-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do

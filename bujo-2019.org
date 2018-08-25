@@ -57,7 +57,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
                                                                   
  
 * AGENDA
-** ENERO
+** GENER
 *** 01 dimarts
 *** 02 dimecres
 *** 03 dijous
@@ -89,7 +89,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 29 dimarts
 *** 30 dimecres
 *** 31 dijous
-** FEBRERO
+** FEBRER
 *** 01 divendres
 *** 02 dissabte
 *** 03 diumenge
@@ -118,7 +118,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 26 dimarts
 *** 27 dimecres
 *** 28 dijous
-** MARZO
+** MARÇ
 *** 01 divendres
 *** 02 dissabte
 *** 03 diumenge
@@ -181,7 +181,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 28 diumenge
 *** 29 dilluns
 *** 30 dimarts
-** MAYO
+** MAIG
 *** 01 dimecres
 *** 02 dijous
 *** 03 divendres
@@ -213,7 +213,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 29 dimecres
 *** 30 dijous
 *** 31 divendres
-** JUNIO
+** JUNY
 *** 01 dissabte
 *** 02 diumenge
 *** 03 dilluns
@@ -244,7 +244,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 28 divendres
 *** 29 dissabte
 *** 30 diumenge
-** JULIO
+** JULIOL
 *** 01 dilluns
 *** 02 dimarts
 *** 03 dimecres
@@ -276,7 +276,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 29 dilluns
 *** 30 dimarts
 *** 31 dimecres
-** AGOSTO
+** AGOST
 *** 01 dijous
 *** 02 divendres
 *** 03 dissabte
@@ -308,7 +308,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 29 dijous
 *** 30 divendres
 *** 31 dissabte
-** SEPTIEMBRE
+** SEPTEMBRE
 *** 01 diumenge
 *** 02 dilluns
 *** 03 dimarts
@@ -371,7 +371,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 29 dimarts
 *** 30 dimecres
 *** 31 dijous
-** NOVIEMBRE
+** NOVEMBRE
 *** 01 divendres
 *** 02 dissabte
 *** 03 diumenge
@@ -402,7 +402,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 28 dijous
 *** 29 divendres
 *** 30 dissabte
-** DICIEMBRE
+** DESEMBRE
 *** 01 diumenge
 *** 02 dilluns
 *** 03 dimarts
@@ -434,8 +434,8 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 29 diumenge
 *** 30 dilluns
 *** 31 dimarts
-* DIARIO
-** ENERO
+* DAILY LOG
+** GENER
 *** 01 de de gener del 2019, dimarts
 *** 02 de de gener del 2019, dimecres
 *** 03 de de gener del 2019, dijous
@@ -467,7 +467,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 29 de de gener del 2019, dimarts
 *** 30 de de gener del 2019, dimecres
 *** 31 de de gener del 2019, dijous
-** FEBRERO
+** FEBRER
 *** 01 de de febrer del 2019, divendres
 *** 02 de de febrer del 2019, dissabte
 *** 03 de de febrer del 2019, diumenge
@@ -496,7 +496,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 26 de de febrer del 2019, dimarts
 *** 27 de de febrer del 2019, dimecres
 *** 28 de de febrer del 2019, dijous
-** MARZO
+** MARÇ
 *** 01 de de març del 2019, divendres
 *** 02 de de març del 2019, dissabte
 *** 03 de de març del 2019, diumenge
@@ -559,7 +559,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 28 de d’abril del 2019, diumenge
 *** 29 de d’abril del 2019, dilluns
 *** 30 de d’abril del 2019, dimarts
-** MAYO
+** MAIG
 *** 01 de de maig del 2019, dimecres
 *** 02 de de maig del 2019, dijous
 *** 03 de de maig del 2019, divendres
@@ -591,7 +591,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 29 de de maig del 2019, dimecres
 *** 30 de de maig del 2019, dijous
 *** 31 de de maig del 2019, divendres
-** JUNIO
+** JUNY
 *** 01 de de juny del 2019, dissabte
 *** 02 de de juny del 2019, diumenge
 *** 03 de de juny del 2019, dilluns
@@ -622,7 +622,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 28 de de juny del 2019, divendres
 *** 29 de de juny del 2019, dissabte
 *** 30 de de juny del 2019, diumenge
-** JULIO
+** JULIOL
 *** 01 de de juliol del 2019, dilluns
 *** 02 de de juliol del 2019, dimarts
 *** 03 de de juliol del 2019, dimecres
@@ -654,7 +654,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 29 de de juliol del 2019, dilluns
 *** 30 de de juliol del 2019, dimarts
 *** 31 de de juliol del 2019, dimecres
-** AGOSTO
+** AGOST
 *** 01 de d’agost del 2019, dijous
 *** 02 de d’agost del 2019, divendres
 *** 03 de d’agost del 2019, dissabte
@@ -686,7 +686,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 29 de d’agost del 2019, dijous
 *** 30 de d’agost del 2019, divendres
 *** 31 de d’agost del 2019, dissabte
-** SEPTIEMBRE
+** SEPTEMBRE
 *** 01 de de setembre del 2019, diumenge
 *** 02 de de setembre del 2019, dilluns
 *** 03 de de setembre del 2019, dimarts
@@ -749,7 +749,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 29 de d’octubre del 2019, dimarts
 *** 30 de d’octubre del 2019, dimecres
 *** 31 de d’octubre del 2019, dijous
-** NOVIEMBRE
+** NOVEMBRE
 *** 01 de de novembre del 2019, divendres
 *** 02 de de novembre del 2019, dissabte
 *** 03 de de novembre del 2019, diumenge
@@ -780,7 +780,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 28 de de novembre del 2019, dijous
 *** 29 de de novembre del 2019, divendres
 *** 30 de de novembre del 2019, dissabte
-** DICIEMBRE
+** DESEMBRE
 *** 01 de de desembre del 2019, diumenge
 *** 02 de de desembre del 2019, dilluns
 *** 03 de de desembre del 2019, dimarts
