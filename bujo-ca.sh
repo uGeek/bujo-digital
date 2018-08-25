@@ -1,10 +1,12 @@
 echo "Introdueix l'any: "
 read ANO
 
+echo "Introdueix el teu nom: "
+read AUTHOR
 
 
 echo "#+TITLE: Bullet Journal Digital
-#+AUTHOR: Angel, Alfons
+#+AUTHOR: $AUTHOR
 #+DATE: $ANO
 #+LANGUAGE: ca
 #+SEQ_TODO: TODO(t) NEXT(n) WAIT(w) | CANCELLED (c) DONE(d)
@@ -27,20 +29,20 @@ echo "** CLAUS
 
 ############## Generar CALENDARI
 
+# echo "Vols el Calendari: "
+# echo "- En una columna (mòbil)?"
+# echo "- En tres columnes (ordinador)?"
+
 echo "* CALENDARI" >> bujo-$ANO.org
 
 echo  "$(cal 2 -3 $ANO)" >> bujo-$ANO.org
-echo  " " >> bujo-$ANO.org
 echo  "$(cal 5 -3 $ANO)" >> bujo-$ANO.org
-echo  " " >> bujo-$ANO.org
 echo  "$(cal 8 -3 $ANO)" >> bujo-$ANO.org
-echo  " " >> bujo-$ANO.org
 echo  "$(cal 11 -3 $ANO)" >> bujo-$ANO.org
-echo  " " >> bujo-$ANO.org
 
-############## Generar AGENDA
+############## Generar FUTURE LOG
 
-echo "* AGENDA" >> bujo-$ANO.org
+echo "* FUTURE LOG" >> bujo-$ANO.org
 
 ENERO=$(cal 1 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
 FEBRERO=$(cal 2 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
@@ -55,7 +57,7 @@ OCTUBRE=$(cal 10 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
 NOVIEMBRE=$(cal 11 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
 DICIEMBRE=$(cal 12 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
 
-############### Codi ENERO
+############### Codi GENER
 
 FECHA_INICIO=$ANO-01-01
 FECHA_FINAL=$ANO-01-$ENERO
