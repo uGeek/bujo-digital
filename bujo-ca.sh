@@ -25,8 +25,9 @@ echo "** CLAUS
 *** # Nota" >> bujo-$ANO.org
 
 
+############## Generar CALENDARI
 
-echo "* FUTURE LOG" >> bujo-$ANO.org
+echo "* CALENDARI" >> bujo-$ANO.org
 
 echo  "$(cal 2 -3 $ANO)" >> bujo-$ANO.org
 echo  " " >> bujo-$ANO.org
@@ -37,10 +38,9 @@ echo  " " >> bujo-$ANO.org
 echo  "$(cal 11 -3 $ANO)" >> bujo-$ANO.org
 echo  " " >> bujo-$ANO.org
 
-
+############## Generar AGENDA
 
 echo "* AGENDA" >> bujo-$ANO.org
-
 
 ENERO=$(cal 1 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
 FEBRERO=$(cal 2 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
@@ -55,7 +55,7 @@ OCTUBRE=$(cal 10 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
 NOVIEMBRE=$(cal 11 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
 DICIEMBRE=$(cal 12 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
 
-###############
+############### Codi ENERO
 
 FECHA_INICIO=$ANO-01-01
 FECHA_FINAL=$ANO-01-$ENERO
@@ -73,7 +73,7 @@ while true; do
 done
 
 
-################
+################ Codi FEBRER
 
 FECHA_INICIO=$ANO-02-01
 FECHA_FINAL=$ANO-02-$FEBRERO
@@ -91,7 +91,7 @@ while true; do
 done
 
 
-################
+################ Codi MARÇ
 
 FECHA_INICIO=$ANO-03-01
 FECHA_FINAL=$ANO-03-$MARZO
@@ -108,7 +108,7 @@ while true; do
     
 done
 
-################
+################ Codi ABRIL
 
 FECHA_INICIO=$ANO-04-01
 FECHA_FINAL=$ANO-04-$ABRIL
@@ -126,7 +126,7 @@ while true; do
 done
 
 
-################
+################ Codi MAIG
 
 FECHA_INICIO=$ANO-05-01
 FECHA_FINAL=$ANO-05-$MAYO
@@ -143,7 +143,7 @@ while true; do
     
 done
 
-################
+################ Codi JUNY
 
 FECHA_INICIO=$ANO-06-01
 FECHA_FINAL=$ANO-06-$JUNIO
@@ -161,7 +161,7 @@ while true; do
 done
 
 
-################
+################ Codi JULIOL
 
 FECHA_INICIO=$ANO-07-01
 FECHA_FINAL=$ANO-07-$JULIO
@@ -180,7 +180,7 @@ done
 
 
 
-################
+################ Codi AGOST
 
 FECHA_INICIO=$ANO-08-01
 FECHA_FINAL=$ANO-08-$AGOSTO
@@ -199,7 +199,7 @@ done
 
 
 
-################
+################ Codi SETEMBRE
 
 FECHA_INICIO=$ANO-09-01
 FECHA_FINAL=$ANO-09-$SEPTIEMBRE
@@ -217,7 +217,7 @@ while true; do
 done
 
 
-################
+################ Codi OCTUBRE
 
 FECHA_INICIO=$ANO-10-01
 FECHA_FINAL=$ANO-10-$OCTUBRE
@@ -236,7 +236,7 @@ done
 
 
 
-################
+################ Codi NOVEMBRE
 
 FECHA_INICIO=$ANO-11-01
 FECHA_FINAL=$ANO-11-$NOVIEMBRE
@@ -255,7 +255,7 @@ done
 
 
 
-################
+################ Codi DESEMBRE
 
 FECHA_INICIO=$ANO-12-01
 FECHA_FINAL=$ANO-12-$DICIEMBRE
@@ -275,20 +275,9 @@ done
 
 
 
-#################################################################################################################
-
-#################################################################################################################
-
-#################################################################################################################
-
-#################################################################################################################
-
-#################################################################################################################
-
+############### Generació de DAILY LOG
 
 echo "* DAILY LOG" >> bujo-$ANO.org
-
-
 
 ###############
 
