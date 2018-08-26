@@ -54,6 +54,25 @@ echo "** CLAUS
 *** +Fet+
 *** # Nota" >> bujo-$ANO.org
 
+############## Generar CONCEPTUALITZACIÓ
+
+echo "* TEORIA" >> bujo-$ANO.org
+echo "" >> bujo-$ANO.org
+echo "El contingut de Bullet Journal Digital es basa en https://bulletjournal.com" >> bujo-$ANO.org
+echo "" >> bujo-$ANO.org
+echo "**Rapid Loggin** és l'idioma en què parla Bullet Journal, el qual consta de quatre components:
+
+    - Temes
+    - Nombres de pàgina (links en la versió digital)
+    - Oracions curtes
+    - Bullets o vinyetes
+    - Tasques
+    - Eventes
+    - Notes
+    - Significadors
+" >> bujo-$ANO.org
+
+
 
 ############## Generar CALENDARI
 
