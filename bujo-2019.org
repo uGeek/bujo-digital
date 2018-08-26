@@ -30,7 +30,7 @@ El contingut de Bullet Journal Digital es basa en https://bulletjournal.com
     - Notes
     - Significadors
 
-* CALENDARI
+* Calendar
                             2019
       De gener             De febrer              De març         
 dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  
@@ -67,20 +67,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 20 21 22 23 24 25 26  17 18 19 20 21 22 23  22 23 24 25 26 27 28  
 27 28 29 30 31        24 25 26 27 28 29 30  29 30 31              
                                                                   
-* MONTHY LOG
-** 01 Gener
-** 02 Febrer
-** 03 Març
-** 04 Abril
-** 05 Maig
-** 06 Juny
-** 07 Juliol
-** 08 Agost
-** 09 Setembre
-** 10 Octubre
-** 11 Novembre
-** 12 Desembre
-* DAILY LOG
+* Monthy Log
 ** GENER
 *** 01 dimarts
 *** 02 dimecres
@@ -458,7 +445,7 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 29 diumenge
 *** 30 dilluns
 *** 31 dimarts
-* DAILY LOG
+* Daily Log
 ** GENER
 *** 01 de de gener del 2019, dimarts
 *** 02 de de gener del 2019, dimecres

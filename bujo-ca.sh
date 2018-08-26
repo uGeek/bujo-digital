@@ -43,9 +43,9 @@ echo "#+TITLE: Bullet Journal Digital
 #+STARTUP: inlineimages" > bujo-$ANO.org
 
 
-echo "* INDEX" >> bujo-$ANO.org
+echo "* Index" >> bujo-$ANO.org
 
-echo "** CLAUS
+echo "** Claus
 *** Tasca Normal
 *** *Tasca Important*
 *** / Tasca Començada
@@ -56,7 +56,7 @@ echo "** CLAUS
 
 ############## Generar CONCEPTUALITZACIÓ
 
-echo "* TEORIA" >> bujo-$ANO.org
+echo "* Teoria" >> bujo-$ANO.org
 echo "" >> bujo-$ANO.org
 echo "El contingut de Bullet Journal Digital es basa en https://bulletjournal.com" >> bujo-$ANO.org
 echo "" >> bujo-$ANO.org
@@ -138,6 +138,22 @@ done
 
 ############## FI Generar CALENDARI
 
+############## Generar FUTURE LOG
+
+echo "* Future Log" >> bujo-$ANO.org
+echo " "
+echo "* 01 Gener
+* 02 Febrer
+* 03 Març
+* 04 Abril
+* 05 Maig
+* 06 Juny
+* 07 Juliol
+* 08 Agost
+* 09 Setembre
+* 10 Octubre
+* 11 Novembre
+* 12 Desembre"
 
 ############## Generar MONTHY LOG
 
