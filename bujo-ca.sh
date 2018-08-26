@@ -147,19 +147,18 @@ done
 ############## Generar FUTURE LOG
 
 echo "* Future Log" >> bujo-$ANO.org
-echo " " >> bujo-$ANO.org
-echo "* 01 Gener
-* 02 Febrer
-* 03 Març
-* 04 Abril
-* 05 Maig
-* 06 Juny
-* 07 Juliol
-* 08 Agost
-* 09 Setembre
-* 10 Octubre
-* 11 Novembre
-* 12 Desembre" >> bujo-$ANO.org
+echo "** 01 Gener
+** 02 Febrer
+** 03 Març
+** 04 Abril
+** 05 Maig
+** 06 Juny
+** 07 Juliol
+** 08 Agost
+** 09 Setembre
+** 10 Octubre
+** 11 Novembre
+** 12 Desembre" >> bujo-$ANO.org
 
 
 ############## Generar MONTHY LOG
