@@ -1,9 +1,37 @@
-echo "Introdueix l'any: "
+#    ______                                         _
+#   / _____)                                       | |
+#  | /  ___   ____  ____    ____   ____   ____   _ | |  ___    ____
+#  | | (___) / _  )|  _ \  / _  ) / ___) / _  | / || | / _ \  / ___)
+#  | \____/|( (/ / | | | |( (/ / | |    ( ( | |( (_| || |_| || |
+#   \_____/  \____)|_| |_| \____)|_|     \_||_| \____| \___/ |_|
+#
+#   ______          _  _                   _____                                     _    _____    _         _               _
+#  (____  \        | || |        _        (_____)                                   | |  (____ \  (_)       (_) _           | |
+#   ____)  ) _   _ | || |  ____ | |_         _     ___   _   _   ____  ____    ____ | |   _   \ \  _   ____  _ | |_    ____ | |
+#  |  __  ( | | | || || | / _  )|  _)       | |   / _ \ | | | | / ___)|  _ \  / _  || |  | |   | || | / _  || ||  _)  / _  || |
+#  | |__)  )| |_| || || |( (/ / | |__    ___| |  | |_| || |_| || |    | | | |( ( | || |  | |__/ / | |( ( | || || |__ ( ( | || |
+#  |______/  \____||_||_| \____) \___)  (____/    \___/  \____||_|    |_| |_| \_||_||_|  |_____/  |_| \_|| ||_| \___) \_||_||_|
+#                                                                                                    (_____|
+#
+echo " "
+echo "Benvingut a l'escript de generació d'un arxiu"
+echo "\e[1;96mBullet Journal Digital\e[0m en format \e[1;96mOrgMode\e[0m."
+echo " "
+echo "Recorda que \e[1;96mOrgMode\e[0m. és un format de text pla"
+echo "què podràs treballar directament sobre \e[1;96mEmacs\e[0m."
+echo " "
+echo "Introdueix \e[1;33ml'any\e[0m què vols generar: "
+echo " "
+echo "----"
 read ANO
-
-echo "Introdueix el teu nom: "
+echo "----"
+echo " "
+echo "Introdueix el teu \e[1;33mnom\e[0m:"
+echo " "
+echo "----------------------"
 read AUTHOR
-
+echo "----------------------"
+echo " "
 
 echo "#+TITLE: Bullet Journal Digital
 #+AUTHOR: $AUTHOR
@@ -17,28 +45,80 @@ echo "#+TITLE: Bullet Journal Digital
 
 echo "* INDEX" >> bujo-$ANO.org
 
-echo "** CLAUS 
-*** Tasca Normal 
-*** *Tasca Important* 
-*** / Tasca Començada 
-*** > Tasca que ve d'Altre Dia 
-*** < Tarea Migra a Algre Dia 
+echo "** CLAUS
+*** Tasca Normal
+*** *Tasca Important*
+*** / Tasca Començada
+*** > Tasca que ve d'Altre Dia
+*** < Tarea Migra a Algre Dia
 *** +Fet+
 *** # Nota" >> bujo-$ANO.org
 
 
 ############## Generar CALENDARI
 
-# echo "Vols el Calendari: "
-# echo "- En una columna (mòbil)?"
-# echo "- En tres columnes (ordinador)?"
+# Declareem les variables choice and assignem valor 3
+choice=3
+# Print to stdout
+echo "Has de decidir si vols el Calendari: "
+echo "1. En \e[1;33muna\e[0m columna, ideal per al \e[1;33mmòbil\e[0m."
+echo "2. En \e[1;92mtres\e[0m columnes, ideal per a \e[1;92ml'ordinador\e[0m."
+echo -n "Eleigix un valor: [1 ó 2]? "
+# Loop mientras la variable sea 3
+# bash while loop
+while [ $choice -eq 3 ]; do
 
-echo "* CALENDARI" >> bujo-$ANO.org
+# llig input
+read choice
+# bash nested if/else
+if [ $choice -eq 1 ] ; then
 
-echo  "$(cal 2 -3 $ANO)" >> bujo-$ANO.org
-echo  "$(cal 5 -3 $ANO)" >> bujo-$ANO.org
-echo  "$(cal 8 -3 $ANO)" >> bujo-$ANO.org
-echo  "$(cal 11 -3 $ANO)" >> bujo-$ANO.org
+    echo "* CALENDARI" >> bujo-$ANO.org
+
+    echo "$(cal 1 $ANO)" >> bujo-$ANO.org
+    echo " " >> bujo-$ANO.org
+    echo "$(cal 2 $ANO)" >> bujo-$ANO.org
+    echo " " >> bujo-$ANO.org
+    echo "$(cal 3 $ANO)" >> bujo-$ANO.org
+    echo " " >> bujo-$ANO.org
+    echo "$(cal 4 $ANO)" >> bujo-$ANO.org
+    echo " " >> bujo-$ANO.org
+    echo "$(cal 5 $ANO)" >> bujo-$ANO.org
+    echo " " >> bujo-$ANO.org
+    echo "$(cal 6 $ANO)" >> bujo-$ANO.org
+    echo " " >> bujo-$ANO.org
+    echo "$(cal 7 $ANO)" >> bujo-$ANO.org
+    echo " " >> bujo-$ANO.org
+    echo "$(cal 8 $ANO)" >> bujo-$ANO.org
+    echo " " >> bujo-$ANO.org
+    echo "$(cal 9 $ANO)" >> bujo-$ANO.org
+    echo " " >> bujo-$ANO.org
+    echo "$(cal 10 $ANO)" >> bujo-$ANO.org
+    echo " " >> bujo-$ANO.org
+    echo "$(cal 11 $ANO)" >> bujo-$ANO.org
+    echo " " >> bujo-$ANO.org
+    echo "$(cal 12 $ANO)" >> bujo-$ANO.org
+
+else
+
+    if [ $choice -eq 2 ] ; then
+            echo "* CALENDARI" >> bujo-$ANO.org
+
+            echo  "$(cal 2 -3 $ANO)" >> bujo-$ANO.org
+            echo  "$(cal 5 -3 $ANO)" >> bujo-$ANO.org
+            echo  "$(cal 8 -3 $ANO)" >> bujo-$ANO.org
+            echo  "$(cal 11 -3 $ANO)" >> bujo-$ANO.org
+    else
+            echo "Elegix entre aquestes opcions 1-2 !"
+            echo "1. Una columna"
+            echo "2. Tres columnes"
+            choice=3
+    fi
+fi
+done
+
+############## FI Generar CALENDARI
+
 
 ############## Generar FUTURE LOG
 

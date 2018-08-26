@@ -1,5 +1,5 @@
 #+TITLE: Bullet Journal Digital
-#+AUTHOR: Alfons
+#+AUTHOR: Alfons Rovira
 #+DATE: 2019
 #+LANGUAGE: ca
 #+SEQ_TODO: TODO(t) NEXT(n) WAIT(w) | CANCELLED (c) DONE(d)
@@ -7,12 +7,12 @@
 #+HTML_HEAD: <link rel=stylesheet type=text/css href=https://ugeek.github.io/style-css-org-mode/bjm.css />
 #+STARTUP: inlineimages
 * INDEX
-** CLAUS 
-*** Tasca Normal 
-*** *Tasca Important* 
-*** / Tasca Començada 
-*** > Tasca que ve d'Altre Dia 
-*** < Tarea Migra a Algre Dia 
+** CLAUS
+*** Tasca Normal
+*** *Tasca Important*
+*** / Tasca Començada
+*** > Tasca que ve d'Altre Dia
+*** < Tarea Migra a Algre Dia
 *** +Fet+
 *** # Nota
 * CALENDARI
