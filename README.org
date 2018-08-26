@@ -1,5 +1,5 @@
 * bujo-digital
-Bullet Journal Digital + Diario, basado en Org-Mode
+Bullet Journal Digital basado en Org-Mode
 
 1) Ejecuta el script *./bujo.sh*
 2) Introduce el año
