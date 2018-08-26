@@ -121,7 +121,7 @@ if [ $choice -eq 1 ] ; then
 else
 
     if [ $choice -eq 2 ] ; then
-            echo "* CALENDARI" >> bujo-$ANO.org
+            echo "* Calendar" >> bujo-$ANO.org
 
             echo  "$(cal 2 -3 $ANO)" >> bujo-$ANO.org
             echo  "$(cal 5 -3 $ANO)" >> bujo-$ANO.org
@@ -141,24 +141,7 @@ done
 
 ############## Generar MONTHY LOG
 
-echo "* MONTHY LOG" >> bujo-$ANO.org
-echo " "
-echo "** 01 Gener
-** 02 Febrer
-** 03 Març
-** 04 Abril
-** 05 Maig
-** 06 Juny
-** 07 Juliol
-** 08 Agost
-** 09 Setembre
-** 10 Octubre
-** 11 Novembre
-** 12 Desembre" >> bujo-$ANO.org
-
-############## Generar MONTHY LOG
-
-echo "* DAILY LOG" >> bujo-$ANO.org
+echo "* Monthy Log" >> bujo-$ANO.org
 
 ENERO=$(cal 1 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
 FEBRERO=$(cal 2 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
@@ -395,7 +378,7 @@ done
 
 ############### Generació de DAILY LOG
 
-echo "* DAILY LOG" >> bujo-$ANO.org
+echo "* Daily Log" >> bujo-$ANO.org
 
 ###############
 

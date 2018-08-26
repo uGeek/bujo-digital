@@ -68,7 +68,19 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 27 28 29 30 31        24 25 26 27 28 29 30  29 30 31              
                                                                   
 * MONTHY LOG
-* MONTHY LOG
+** 01 Gener
+** 02 Febrer
+** 03 Març
+** 04 Abril
+** 05 Maig
+** 06 Juny
+** 07 Juliol
+** 08 Agost
+** 09 Setembre
+** 10 Octubre
+** 11 Novembre
+** 12 Desembre
+* DAILY LOG
 ** GENER
 *** 01 dimarts
 *** 02 dimecres
