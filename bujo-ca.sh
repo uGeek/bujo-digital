@@ -46,12 +46,18 @@ echo "#+TITLE: Bullet Journal Digital
 echo "* Index" >> bujo-$ANO.org
 
 echo "** Claus
-*** Tasca Normal
-*** *Tasca Important*
-*** / Tasca Començada
-*** > Tasca que ve d'Altre Dia
-*** < Tarea Migra a Algre Dia
-*** +Fet+
+*** TODO Tasca per fer
+*** NEXT Propera tasca
+*** DOING Tasca començada
+*** WAIT Tasca congelada
+*** DONE Tasca feta
+*** CANCELLED Tasca cancelada
+*** CLOSED Tasca tancada
+*** [#A] Tasca importàcia màxima
+*** [#B] Tasca relevant
+*** [#C] Tasca delegada
+*** > Tasca que ve d'altre dia
+*** < Tarea Migra a altre dia
 *** # Nota" >> bujo-$ANO.org
 
 ############## Generar CONCEPTUALITZACIÓ
@@ -141,7 +147,7 @@ done
 ############## Generar FUTURE LOG
 
 echo "* Future Log" >> bujo-$ANO.org
-echo " "
+echo " " >> bujo-$ANO.org
 echo "* 01 Gener
 * 02 Febrer
 * 03 Març
@@ -153,7 +159,8 @@ echo "* 01 Gener
 * 09 Setembre
 * 10 Octubre
 * 11 Novembre
-* 12 Desembre"
+* 12 Desembre" >> bujo-$ANO.org
+
 
 ############## Generar MONTHY LOG
 
