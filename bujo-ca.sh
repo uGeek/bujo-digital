@@ -139,9 +139,26 @@ done
 ############## FI Generar CALENDARI
 
 
-############## Generar FUTURE LOG
+############## Generar MONTHY LOG
 
-echo "* FUTURE LOG" >> bujo-$ANO.org
+echo "* MONTHY LOG" >> bujo-$ANO.org
+echo " "
+echo "** 01 Gener
+** 02 Febrer
+** 03 Març
+** 04 Abril
+** 05 Maig
+** 06 Juny
+** 07 Juliol
+** 08 Agost
+** 09 Setembre
+** 10 Octubre
+** 11 Novembre
+** 12 Desembre" >> bujo-$ANO.org
+
+############## Generar MONTHY LOG
+
+echo "* DAILY LOG" >> bujo-$ANO.org
 
 ENERO=$(cal 1 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
 FEBRERO=$(cal 2 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
