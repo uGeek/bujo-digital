@@ -1,4 +1,8 @@
 clear
+echo "Escribe el título del Tracker que deseas crear:\n\n"
+read TRACKER
+
+clear
 echo -e "Escribe la Fecha de Inicio y Fecha Final, con el Formato: AÑO-MES-DIA\n\n Ejemplo:\n 2018-01-01 2018-01-31\n"
 read FECHA_INICIO FECHA_FINAL
 
@@ -26,7 +30,7 @@ done
 sed -e 's/^/| /' -e 's/,/,| /g' -e 's/$/,|/' temp.org | column -t -s, > tracker.org
 
 
-echo "* TRACKER" > temp
+echo "* $TRACKER" > temp
 cat tracker.org >> temp 
 mv temp tracker.org
 
