@@ -7,7 +7,7 @@ echo -e "Escribe el título de cada columna, separado por comas ",". \n\n Ejempl
 read CABECERA
 
 clear
-echo -e "Añade tantas comas como columnas habrá tras la columna de fecha. \n\n Ejemplo: \n ,,\n"
+echo -e "Escribe tantas comas como columnas quieres que se añadan tras la columna de la fecha. \n\n Ejemplo: \n ,,\n"
 read COMAS
 
 
