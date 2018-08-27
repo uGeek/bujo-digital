@@ -43,16 +43,41 @@ echo "#+TITLE: Bullet Journal Digital
 #+STARTUP: inlineimages" > bujo-$ANO.org
 
 
-echo "* INDEX" >> bujo-$ANO.org
+echo "* Index" >> bujo-$ANO.org
 
-echo "** CLAUS
-*** Tasca Normal
-*** *Tasca Important*
-*** / Tasca Començada
-*** > Tasca que ve d'Altre Dia
-*** < Tarea Migra a Algre Dia
-*** +Fet+
+echo "** Claus
+*** TODO Tasca per fer
+*** NEXT Propera tasca
+*** DOING Tasca començada
+*** WAIT Tasca congelada
+*** DONE Tasca feta
+*** CANCELLED Tasca cancelada
+*** CLOSED Tasca tancada
+*** [#A] Tasca importàcia màxima
+*** [#B] Tasca relevant
+*** [#C] Tasca delegada
+*** > Tasca que ve d'altre dia
+*** < Tarea Migra a altre dia
 *** # Nota" >> bujo-$ANO.org
+
+############## Generar CONCEPTUALITZACIÓ
+
+echo "* Teoria" >> bujo-$ANO.org
+echo "" >> bujo-$ANO.org
+echo "El contingut de Bullet Journal Digital es basa en https://bulletjournal.com" >> bujo-$ANO.org
+echo "" >> bujo-$ANO.org
+echo "**Rapid Loggin** és l'idioma en què parla Bullet Journal, el qual consta de quatre components:
+
+    - Temes
+    - Nombres de pàgina (links en la versió digital)
+    - Oracions curtes
+    - Bullets o vinyetes
+    - Tasques
+    - Eventes
+    - Notes
+    - Significadors
+" >> bujo-$ANO.org
+
 
 
 ############## Generar CALENDARI
@@ -102,7 +127,7 @@ if [ $choice -eq 1 ] ; then
 else
 
     if [ $choice -eq 2 ] ; then
-            echo "* CALENDARI" >> bujo-$ANO.org
+            echo "* Calendar" >> bujo-$ANO.org
 
             echo  "$(cal 2 -3 $ANO)" >> bujo-$ANO.org
             echo  "$(cal 5 -3 $ANO)" >> bujo-$ANO.org
@@ -119,10 +144,26 @@ done
 
 ############## FI Generar CALENDARI
 
-
 ############## Generar FUTURE LOG
 
-echo "* FUTURE LOG" >> bujo-$ANO.org
+echo "* Future Log" >> bujo-$ANO.org
+echo "** 01 Gener
+** 02 Febrer
+** 03 Març
+** 04 Abril
+** 05 Maig
+** 06 Juny
+** 07 Juliol
+** 08 Agost
+** 09 Setembre
+** 10 Octubre
+** 11 Novembre
+** 12 Desembre" >> bujo-$ANO.org
+
+
+############## Generar MONTHY LOG
+
+echo "* Monthy Log" >> bujo-$ANO.org
 
 ENERO=$(cal 1 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
 FEBRERO=$(cal 2 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
@@ -359,7 +400,7 @@ done
 
 ############### Generació de DAILY LOG
 
-echo "* DAILY LOG" >> bujo-$ANO.org
+echo "* Daily Log" >> bujo-$ANO.org
 
 ###############
 
