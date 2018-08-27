@@ -1,5 +1,5 @@
 clear
-echo "Escribe el título del Tracker que deseas crear:\n\n"
+echo -e "Escribe el Título del Tracker que deseas crear:\n\n"
 read TRACKER
 
 clear
