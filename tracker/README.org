@@ -1,1 +1,4 @@
 * Crea un tracker para tu Org Mode
+1) Introduce la *Fecha de Inicio y Final*.
+2) Escribe el *título de cada columna, separado por comas*.
+3) Escribe tantas *comas* como columnas quieres que se añadan tras la columna de la fecha.
