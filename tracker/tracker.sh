@@ -3,7 +3,7 @@ echo -e "Escribe la Fecha de Inicio y Fecha Final, con el Formato: AÑO-MES-DIA\
 read FECHA_INICIO FECHA_FINAL
 
 clear
-echo -e "Escribe la Cabecera del Tracker, separado por comas ",". \n\n Ejemplo:\n Fecha,Peso,Ejercicio\n"
+echo -e "Escribe el título de cada columna, separado por comas ",". \n\n Ejemplo:\n Fecha,Peso,Ejercicio\n"
 read CABECERA
 
 clear
