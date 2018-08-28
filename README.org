@@ -4,3 +4,7 @@ Bullet Journal Digital basado en Org-Mode
 1) Ejecuta el script *./bujo.sh*
 2) Introduce el año
 3) Ya tienes tu plantilla de Bullet Journal y Diario para Org Mode!!!
+
+Aquí puedes ver un ejemplo de todo el proceso de generación junto con el proceso de edición. Utilizamos el tabulador, `TAB` para desplegar árboles, de nuevo `TAB` para contraer árbol concreto y mayúscula tabulador `SHIFT-TAB` para contraer todo el árbol.
+
+![Imagen](/image/bujo-cat.gift)
