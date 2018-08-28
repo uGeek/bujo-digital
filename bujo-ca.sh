@@ -40,10 +40,10 @@ echo "#+TITLE: Bullet Journal Digital
 #+SEQ_TODO: TODO(t) NEXT(n) WAIT(w) | CANCELLED (c) DONE(d)
 #+INFOJS_OPT: view:t toc:t ltoc:t mouse:underline buttons:0 path:https://ugeek.github.io/style-css-org-mode/org-info.min.js
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://ugeek.github.io/style-css-org-mode/bjm.css" />
-#+STARTUP: inlineimages" > bujo-$ANO.org
+#+STARTUP: inlineimages" > bujo-ca-$ANO.org
 
 
-echo "* Index" >> bujo-$ANO.org
+echo "* Index" >> bujo-ca-$ANO.org
 
 echo "** Claus
 *** TODO Tasca per fer
@@ -58,14 +58,14 @@ echo "** Claus
 *** [#C] Tasca delegada
 *** > Tasca que ve d'altre dia
 *** < Tarea Migra a altre dia
-*** # Nota" >> bujo-$ANO.org
+*** # Nota" >> bujo-ca-$ANO.org
 
 ############## Generar CONCEPTUALITZACIÓ
 
-echo "* Teoria" >> bujo-$ANO.org
-echo "" >> bujo-$ANO.org
-echo "El contingut de Bullet Journal Digital es basa en https://bulletjournal.com" >> bujo-$ANO.org
-echo "" >> bujo-$ANO.org
+echo "* Teoria" >> bujo-ca-$ANO.org
+echo "" >> bujo-ca-$ANO.org
+echo "El contingut de Bullet Journal Digital es basa en https://bulletjournal.com" >> bujo-ca-$ANO.org
+echo "" >> bujo-ca-$ANO.org
 echo "**Rapid Loggin** és l'idioma en què parla Bullet Journal, el qual consta de quatre components:
 
     - Temes
@@ -76,9 +76,28 @@ echo "**Rapid Loggin** és l'idioma en què parla Bullet Journal, el qual consta
     - Eventes
     - Notes
     - Significadors
-" >> bujo-$ANO.org
+" >> bujo-ca-$ANO.org
+echo ""
+echo "Organitzar-se amb arxius annexes (secció no acabada):
 
+    - **calendar.org**: Pot contenir events relacionat amb dies especials.
+    - **contacts.org**: Pot contenir detalls dels contactes.
+    - **organizer.org: Pot contenir les tasques de han de tornar-se a presentar.
+    - **people.org**: Pot contenir entrades relacionades amb persones.
+    - **review.org**: Pot contenir revisions setmanals i mensuals.
+    - **routine.org**: Pot contenir les tasques diàries.
+    - **school.org**: Pot contenir les tasques relacioades amb l'escola.
+    - **arxius.org**: Pot contenir els arxius de tasques de tots els arxius .org de forma que llevem de la vista les tasques fetes. Aquesta part depén de la metodologia de treball, en metodologia Bullet Journal no fa falta arxivar, ja que queda l'històric en el seu lloc.
 
+    Exemple d'estrurctura de l'arxiu:
+
+    * 2018
+    ** organizer.org_archive
+    ** people.org_archive
+    ** review.org_archive
+    ** school.org_archive
+
+    Per tal que tot funcione cal escriure la configuració d'aquestes funcionalitats a l'arxiu .emacs i explicar com s'arxiva el tros de text que volem arxivar. Ho explicarem pròximament." >> bujo-ca-$ANO.org
 
 ############## Generar CALENDARI
 
@@ -98,41 +117,41 @@ read choice
 # bash nested if/else
 if [ $choice -eq 1 ] ; then
 
-    echo "* CALENDARI" >> bujo-$ANO.org
+    echo "* CALENDARI" >> bujo-ca-$ANO.org
 
-    echo "$(cal 1 $ANO)" >> bujo-$ANO.org
-    echo " " >> bujo-$ANO.org
-    echo "$(cal 2 $ANO)" >> bujo-$ANO.org
-    echo " " >> bujo-$ANO.org
-    echo "$(cal 3 $ANO)" >> bujo-$ANO.org
-    echo " " >> bujo-$ANO.org
-    echo "$(cal 4 $ANO)" >> bujo-$ANO.org
-    echo " " >> bujo-$ANO.org
-    echo "$(cal 5 $ANO)" >> bujo-$ANO.org
-    echo " " >> bujo-$ANO.org
-    echo "$(cal 6 $ANO)" >> bujo-$ANO.org
-    echo " " >> bujo-$ANO.org
-    echo "$(cal 7 $ANO)" >> bujo-$ANO.org
-    echo " " >> bujo-$ANO.org
-    echo "$(cal 8 $ANO)" >> bujo-$ANO.org
-    echo " " >> bujo-$ANO.org
-    echo "$(cal 9 $ANO)" >> bujo-$ANO.org
-    echo " " >> bujo-$ANO.org
-    echo "$(cal 10 $ANO)" >> bujo-$ANO.org
-    echo " " >> bujo-$ANO.org
-    echo "$(cal 11 $ANO)" >> bujo-$ANO.org
-    echo " " >> bujo-$ANO.org
-    echo "$(cal 12 $ANO)" >> bujo-$ANO.org
+    echo "$(cal 1 $ANO)" >> bujo-ca-$ANO.org
+    echo " " >> bujo-ca-$ANO.org
+    echo "$(cal 2 $ANO)" >> bujo-ca-$ANO.org
+    echo " " >> bujo-ca-$ANO.org
+    echo "$(cal 3 $ANO)" >> bujo-ca-$ANO.org
+    echo " " >> bujo-ca-$ANO.org
+    echo "$(cal 4 $ANO)" >> bujo-ca-$ANO.org
+    echo " " >> bujo-ca-$ANO.org
+    echo "$(cal 5 $ANO)" >> bujo-ca-$ANO.org
+    echo " " >> bujo-ca-$ANO.org
+    echo "$(cal 6 $ANO)" >> bujo-ca-$ANO.org
+    echo " " >> bujo-ca-$ANO.org
+    echo "$(cal 7 $ANO)" >> bujo-ca-$ANO.org
+    echo " " >> bujo-ca-$ANO.org
+    echo "$(cal 8 $ANO)" >> bujo-ca-$ANO.org
+    echo " " >> bujo-ca-$ANO.org
+    echo "$(cal 9 $ANO)" >> bujo-ca-$ANO.org
+    echo " " >> bujo-ca-$ANO.org
+    echo "$(cal 10 $ANO)" >> bujo-ca-$ANO.org
+    echo " " >> bujo-ca-$ANO.org
+    echo "$(cal 11 $ANO)" >> bujo-ca-$ANO.org
+    echo " " >> bujo-ca-$ANO.org
+    echo "$(cal 12 $ANO)" >> bujo-ca-$ANO.org
 
 else
 
     if [ $choice -eq 2 ] ; then
-            echo "* Calendar" >> bujo-$ANO.org
+            echo "* Calendar" >> bujo-ca-$ANO.org
 
-            echo  "$(cal 2 -3 $ANO)" >> bujo-$ANO.org
-            echo  "$(cal 5 -3 $ANO)" >> bujo-$ANO.org
-            echo  "$(cal 8 -3 $ANO)" >> bujo-$ANO.org
-            echo  "$(cal 11 -3 $ANO)" >> bujo-$ANO.org
+            echo  "$(cal 2 -3 $ANO)" >> bujo-ca-$ANO.org
+            echo  "$(cal 5 -3 $ANO)" >> bujo-ca-$ANO.org
+            echo  "$(cal 8 -3 $ANO)" >> bujo-ca-$ANO.org
+            echo  "$(cal 11 -3 $ANO)" >> bujo-ca-$ANO.org
     else
             echo "Elegix entre aquestes opcions 1-2 !"
             echo "1. Una columna"
@@ -146,7 +165,7 @@ done
 
 ############## Generar FUTURE LOG
 
-echo "* Future Log" >> bujo-$ANO.org
+echo "* Future Log" >> bujo-ca-$ANO.org
 echo "** 01 Gener
 ** 02 Febrer
 ** 03 Març
@@ -158,12 +177,12 @@ echo "** 01 Gener
 ** 09 Setembre
 ** 10 Octubre
 ** 11 Novembre
-** 12 Desembre" >> bujo-$ANO.org
+** 12 Desembre" >> bujo-ca-$ANO.org
 
 
 ############## Generar MONTHY LOG
 
-echo "* Monthy Log" >> bujo-$ANO.org
+echo "* Monthy Log" >> bujo-ca-$ANO.org
 
 ENERO=$(cal 1 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
 FEBRERO=$(cal 2 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
@@ -183,13 +202,13 @@ DICIEMBRE=$(cal 12 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
 FECHA_INICIO=$ANO-01-01
 FECHA_FINAL=$ANO-01-$ENERO
 
-echo "** GENER" >> bujo-$ANO.org
+echo "** GENER" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d %A')
-     echo "*** $(date -d $curr +'%d %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -201,13 +220,13 @@ done
 FECHA_INICIO=$ANO-02-01
 FECHA_FINAL=$ANO-02-$FEBRERO
 
-echo "** FEBRER" >> bujo-$ANO.org
+echo "** FEBRER" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d %A')
-     echo "*** $(date -d $curr +'%d %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -219,13 +238,13 @@ done
 FECHA_INICIO=$ANO-03-01
 FECHA_FINAL=$ANO-03-$MARZO
 
-echo "** MARÇ" >> bujo-$ANO.org
+echo "** MARÇ" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d %A')
-     echo "*** $(date -d $curr +'%d %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -236,13 +255,13 @@ done
 FECHA_INICIO=$ANO-04-01
 FECHA_FINAL=$ANO-04-$ABRIL
 
-echo "** ABRIL" >> bujo-$ANO.org
+echo "** ABRIL" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d %A')
-     echo "*** $(date -d $curr +'%d %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -254,13 +273,13 @@ done
 FECHA_INICIO=$ANO-05-01
 FECHA_FINAL=$ANO-05-$MAYO
 
-echo "** MAIG" >> bujo-$ANO.org
+echo "** MAIG" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d %A')
-     echo "*** $(date -d $curr +'%d %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -271,13 +290,13 @@ done
 FECHA_INICIO=$ANO-06-01
 FECHA_FINAL=$ANO-06-$JUNIO
 
-echo "** JUNY" >> bujo-$ANO.org
+echo "** JUNY" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d %A')
-     echo "*** $(date -d $curr +'%d %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -289,13 +308,13 @@ done
 FECHA_INICIO=$ANO-07-01
 FECHA_FINAL=$ANO-07-$JULIO
 
-echo "** JULIOL" >> bujo-$ANO.org
+echo "** JULIOL" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d %A')
-     echo "*** $(date -d $curr +'%d %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -308,13 +327,13 @@ done
 FECHA_INICIO=$ANO-08-01
 FECHA_FINAL=$ANO-08-$AGOSTO
 
-echo "** AGOST" >> bujo-$ANO.org
+echo "** AGOST" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d %A')
-     echo "*** $(date -d $curr +'%d %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -327,13 +346,13 @@ done
 FECHA_INICIO=$ANO-09-01
 FECHA_FINAL=$ANO-09-$SEPTIEMBRE
 
-echo "** SEPTEMBRE" >> bujo-$ANO.org
+echo "** SEPTEMBRE" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d %A')
-     echo "*** $(date -d $curr +'%d %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -345,13 +364,13 @@ done
 FECHA_INICIO=$ANO-10-01
 FECHA_FINAL=$ANO-10-$OCTUBRE
 
-echo "** OCTUBRE" >> bujo-$ANO.org
+echo "** OCTUBRE" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d %A')
-     echo "*** $(date -d $curr +'%d %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -364,13 +383,13 @@ done
 FECHA_INICIO=$ANO-11-01
 FECHA_FINAL=$ANO-11-$NOVIEMBRE
 
-echo "** NOVEMBRE" >> bujo-$ANO.org
+echo "** NOVEMBRE" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d %A')
-     echo "*** $(date -d $curr +'%d %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -383,13 +402,13 @@ done
 FECHA_INICIO=$ANO-12-01
 FECHA_FINAL=$ANO-12-$DICIEMBRE
 
-echo "** DESEMBRE" >> bujo-$ANO.org
+echo "** DESEMBRE" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d %A')
-     echo "*** $(date -d $curr +'%d %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -400,20 +419,20 @@ done
 
 ############### Generació de DAILY LOG
 
-echo "* Daily Log" >> bujo-$ANO.org
+echo "* Daily Log" >> bujo-ca-$ANO.org
 
 ###############
 
 FECHA_INICIO=$ANO-01-01
 FECHA_FINAL=$ANO-01-$ENERO
 
-echo "** GENER" >> bujo-$ANO.org
+echo "** GENER" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d de %B del %Y, %A')
-     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -425,13 +444,13 @@ done
 FECHA_INICIO=$ANO-02-01
 FECHA_FINAL=$ANO-02-$FEBRERO
 
-echo "** FEBRER" >> bujo-$ANO.org
+echo "** FEBRER" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d de %B del %Y, %A')
-     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -443,13 +462,13 @@ done
 FECHA_INICIO=$ANO-03-01
 FECHA_FINAL=$ANO-03-$MARZO
 
-echo "** MARÇ" >> bujo-$ANO.org
+echo "** MARÇ" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d de %B del %Y, %A')
-     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -460,13 +479,13 @@ done
 FECHA_INICIO=$ANO-04-01
 FECHA_FINAL=$ANO-04-$ABRIL
 
-echo "** ABRIL" >> bujo-$ANO.org
+echo "** ABRIL" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d de %B del %Y, %A')
-     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -478,14 +497,14 @@ done
 FECHA_INICIO=$ANO-05-01
 FECHA_FINAL=$ANO-05-$MAYO
 
-echo "** MAIG" >> bujo-$ANO.org
+echo "** MAIG" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
 
      echo $(date -d $curr +'%d de %B del %Y, %A')
-     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -496,13 +515,13 @@ done
 FECHA_INICIO=$ANO-06-01
 FECHA_FINAL=$ANO-06-$JUNIO
 
-echo "** JUNY" >> bujo-$ANO.org
+echo "** JUNY" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d de %B del %Y, %A')
-     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -514,13 +533,13 @@ done
 FECHA_INICIO=$ANO-07-01
 FECHA_FINAL=$ANO-07-$JULIO
 
-echo "** JULIOL" >> bujo-$ANO.org
+echo "** JULIOL" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d de %B del %Y, %A')
-     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -533,13 +552,13 @@ done
 FECHA_INICIO=$ANO-08-01
 FECHA_FINAL=$ANO-08-$AGOSTO
 
-echo "** AGOST" >> bujo-$ANO.org
+echo "** AGOST" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d de %B del %Y, %A')
-     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -552,13 +571,13 @@ done
 FECHA_INICIO=$ANO-09-01
 FECHA_FINAL=$ANO-09-$SEPTIEMBRE
 
-echo "** SEPTEMBRE" >> bujo-$ANO.org
+echo "** SEPTEMBRE" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d de %B del %Y, %A')
-     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -570,13 +589,13 @@ done
 FECHA_INICIO=$ANO-10-01
 FECHA_FINAL=$ANO-10-$OCTUBRE
 
-echo "** OCTUBRE" >> bujo-$ANO.org
+echo "** OCTUBRE" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d de %B del %Y, %A')
-     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -589,13 +608,13 @@ done
 FECHA_INICIO=$ANO-11-01
 FECHA_FINAL=$ANO-11-$NOVIEMBRE
 
-echo "** NOVEMBRE" >> bujo-$ANO.org
+echo "** NOVEMBRE" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d de %B del %Y, %A')
-     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
@@ -608,13 +627,13 @@ done
 FECHA_INICIO=$ANO-12-01
 FECHA_FINAL=$ANO-12-$DICIEMBRE
 
-echo "** DESEMBRE" >> bujo-$ANO.org
+echo "** DESEMBRE" >> bujo-ca-$ANO.org
 
 curr="$FECHA_INICIO"
 while true; do
 
      echo $(date -d $curr +'%d de %B del %Y, %A')
-     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-$ANO.org
+     echo "*** $(date -d $curr +'%d de %B del %Y, %A')" >> bujo-ca-$ANO.org
     [ "$curr" \< "$FECHA_FINAL" ] || break
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
