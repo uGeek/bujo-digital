@@ -7,4 +7,4 @@ Bullet Journal Digital basado en Org-Mode
 
 Aquí puedes ver un ejemplo de todo el proceso de generación junto con el proceso de edición. Utilizamos el tabulador, `TAB` para desplegar árboles, de nuevo `TAB` para contraer árbol concreto y mayúscula tabulador `SHIFT-TAB` para contraer todo el árbol.
 
-![Imagen](/image/bujo-cat.gift)
+![Imagen](https://github.com/uGeek/bujo-digital/blob/master/images/bujo-ca.gif)
