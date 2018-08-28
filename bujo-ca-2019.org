@@ -25,7 +25,8 @@
 
 El contingut de Bullet Journal Digital es basa en https://bulletjournal.com
 
-**Rapid Loggin** és l'idioma en què parla Bullet Journal, el qual consta de quatre components:
+
+    **Rapid Loggin** és l'idioma en què parla Bullet Journal, el qual consta de quatre components:
 
     - Temes
     - Nombres de pàgina (links en la versió digital)
@@ -36,7 +37,8 @@ El contingut de Bullet Journal Digital es basa en https://bulletjournal.com
     - Notes
     - Significadors
 
-Organitzar-se amb arxius annexes (secció no acabada):
+
+    Organitzar-se amb arxius annexes (secció no acabada):
 
     - **calendar.org**: Pot contenir events relacionat amb dies especials.
     - **contacts.org**: Pot contenir detalls dels contactes.

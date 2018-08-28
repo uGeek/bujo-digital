@@ -66,7 +66,8 @@ echo "* Teoria" >> bujo-ca-$ANO.org
 echo "" >> bujo-ca-$ANO.org
 echo "El contingut de Bullet Journal Digital es basa en https://bulletjournal.com" >> bujo-ca-$ANO.org
 echo "" >> bujo-ca-$ANO.org
-echo "**Rapid Loggin** és l'idioma en què parla Bullet Journal, el qual consta de quatre components:
+echo "
+    **Rapid Loggin** és l'idioma en què parla Bullet Journal, el qual consta de quatre components:
 
     - Temes
     - Nombres de pàgina (links en la versió digital)
@@ -78,26 +79,8 @@ echo "**Rapid Loggin** és l'idioma en què parla Bullet Journal, el qual consta
     - Significadors
 " >> bujo-ca-$ANO.org
 echo ""
-echo "Organitzar-se amb arxius annexes (secció no acabada):
-
-    - **calendar.org**: Pot contenir events relacionat amb dies especials.
-    - **contacts.org**: Pot contenir detalls dels contactes.
-    - **organizer.org: Pot contenir les tasques de han de tornar-se a presentar.
-    - **people.org**: Pot contenir entrades relacionades amb persones.
-    - **review.org**: Pot contenir revisions setmanals i mensuals.
-    - **routine.org**: Pot contenir les tasques diàries.
-    - **school.org**: Pot contenir les tasques relacioades amb l'escola.
-    - **arxius.org**: Pot contenir els arxius de tasques de tots els arxius .org de forma que llevem de la vista les tasques fetes. Aquesta part depén de la metodologia de treball, en metodologia Bullet Journal no fa falta arxivar, ja que queda l'històric en el seu lloc.
-
-    Exemple d'estrurctura de l'arxiu:
-
-    * 2018
-    ** organizer.org_archive
-    ** people.org_archive
-    ** review.org_archive
-    ** school.org_archive
-
-    Per tal que tot funcione cal escriure la configuració d'aquestes funcionalitats a l'arxiu .emacs i explicar com s'arxiva el tros de text que volem arxivar. Ho explicarem pròximament." >> bujo-ca-$ANO.org
+echo "
+    *Bullet Journal Digital* utilitzant la metodologia *OrgMode* no és més que un intent de sistematitzar en un arxiu totes les dades possibles. Excepcionalment utilitzem arxius externs per a arxivar troços de text, per a capturar o per a incrustar bibliografia a partir d'un arxiu específic." >> bujo-ca-$ANO.org
 
 ############## Generar CALENDARI
 
