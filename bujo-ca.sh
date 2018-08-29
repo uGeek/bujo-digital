@@ -98,6 +98,7 @@ while [ $choice -eq 3 ]; do
 # llig input
 read choice
 # bash nested if/else
+# Donem a elegir generar el calendari en una columna o en tres
 if [ $choice -eq 1 ] ; then
 
     echo "* CALENDARI" >> bujo-ca-$ANO.org
@@ -147,6 +148,7 @@ done
 ############## FI Generar CALENDARI
 
 ############## Generar FUTURE LOG
+# Llistem els mesos de forma literal
 
 echo "* Future Log" >> bujo-ca-$ANO.org
 echo "** 01 Gener
@@ -162,8 +164,10 @@ echo "** 01 Gener
 ** 11 Novembre
 ** 12 Desembre" >> bujo-ca-$ANO.org
 
+############## FI Generar FUTURE LOG
 
 ############## Generar MONTHY LOG
+# Calculem quants dies té cada mes
 
 echo "* Monthy Log" >> bujo-ca-$ANO.org
 
@@ -181,6 +185,9 @@ NOVIEMBRE=$(cal 11 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
 DICIEMBRE=$(cal 12 $ANO | awk 'NF {DAYS = $NF}; END {print DAYS}')
 
 ############### Codi GENER
+# Generem, de forma acotada, mes a mes.
+# La variable $curr indica l'increment dia a dia.
+
 
 FECHA_INICIO=$ANO-01-01
 FECHA_FINAL=$ANO-01-$ENERO
@@ -397,7 +404,7 @@ while true; do
     
 done
 
-
+############## FI Generar MONTHY LOG
 
 
 ############### Generació de DAILY LOG
@@ -405,6 +412,9 @@ done
 echo "* Daily Log" >> bujo-ca-$ANO.org
 
 ###############
+# Genere de forma acotada en mesos
+# els dies de cada mes amb un format
+# més llarg aquesta vegada.
 
 FECHA_INICIO=$ANO-01-01
 FECHA_FINAL=$ANO-01-$ENERO
