@@ -82,6 +82,37 @@ echo ""
 echo "
     *Bullet Journal Digital* utilitzant la metodologia *OrgMode* no és més que un intent de sistematitzar en un arxiu totes les dades possibles. Excepcionalment utilitzem arxius externs per a arxivar troços de text, per a capturar o per a incrustar bibliografia a partir d'un arxiu específic." >> bujo-ca-$ANO.org
 
+################ Teoría GTD
+
+echo "* Dimensions"
+echo "** Control"
+echo "*** Capturar"
+echo "*** Aclarir"
+echo "*** Organitzar"
+echo "*** Reflexionar"
+echo "*** Comprometre's"
+echo "** Perspectiva"
+echo "*** Propòsits - Principis"
+echo "*** Visió"
+echo "*** Metes"
+echo "*** Àrees de responsabilitat"
+echo "*** Projectes"
+echo "*** Accions"
+echo "* Matriu d'autogestió"
+echo "** Bajo Control + Baja Perspectiva"
+echo "   - Negatiu: Víctima"
+echo "   - Positiu: Capacitat de resposta"
+echo "** Alt Control + Baixa Perspectiva"
+echo "   - Negatiu: Micromanager"
+echo "   - Positiu: Implementador"
+echo "** Bajo Control + Alta Perspectiva"
+echo "   - Negatiu: Creador boig"
+echo "   - Positiu: Visionari"
+echo "** Bajo Control + Baja Perspectiva"
+echo "   - Negatiu: Autocomplacència"
+echo "   - Positiu: Comandant en cap"
+
+
 ############## Generar CALENDARI
 
 # Declareem les variables choice and assignem valor 3
@@ -631,3 +662,24 @@ while true; do
     curr=$( date +%Y-%m-%d --date "$curr +1 day" )
     
 done
+
+################ ID
+
+echo "* ID"
+
+################ Projects
+echo "* Projects"
+
+################ Col·leccions
+
+echo "** Links"
+echo "** Notes"
+################ Trackers
+
+echo "* Trackers"
+
+################ Kanban
+
+echo "Kanban"
+echo "#+Begin: kanban"
+echo "#+END"
