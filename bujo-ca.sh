@@ -43,7 +43,8 @@ echo "#+TITLE: Bullet Journal Digital
 #+STARTUP: inlineimages" > bujo-ca-$ANO.org
 
 
-echo "* Index" >> bujo-ca-$ANO.org
+echo "
+* Index" >> bujo-ca-$ANO.org
 
 echo "** Claus
 *** TODO Tasca per fer
@@ -66,7 +67,7 @@ echo "* Teoria" >> bujo-ca-$ANO.org
 echo "" >> bujo-ca-$ANO.org
 echo "El contingut de Bullet Journal Digital es basa en https://bulletjournal.com" >> bujo-ca-$ANO.org
 echo "" >> bujo-ca-$ANO.org
-echo "
+echo "** Bullet Journal
     **Rapid Loggin** és l'idioma en què parla Bullet Journal, el qual consta de quatre components:
 
     - Temes
@@ -80,38 +81,59 @@ echo "
 " >> bujo-ca-$ANO.org
 echo ""
 echo "
-    *Bullet Journal Digital* utilitzant la metodologia *OrgMode* no és més que un intent de sistematitzar en un arxiu totes les dades possibles. Excepcionalment utilitzem arxius externs per a arxivar troços de text, per a capturar o per a incrustar bibliografia a partir d'un arxiu específic." >> bujo-ca-$ANO.org
+    *Bullet Journal Digital* utilitzant la metodologia *OrgMode* no és més que un intent de sistematitzar en un arxiu totes les dades possibles. Excepcionalment utilitzem arxius externs per a arxivar troços de text, per a capturar o per a incrustar bibliografia a partir d'un arxiu específic.
+" >> bujo-ca-$ANO.org
 
 ################ Teoría GTD
+echo "** GTD
+*** Dimensions
+**** Control
+***** Capturar
+***** Aclarir
+***** Organitzar
+***** Reflexionar
+***** Comprometre's
+**** Perspectiva
+***** Propòsits - Principis
+***** Visió
+***** Metes
+***** Àrees de responsabilitat
+***** Projectes
+***** Accions
+*** Matriu d'autogestió
+**** Bajo Control + Baja Perspectiva
+   - Negatiu: Víctima
+   - Positiu: Capacitat de resposta
+**** Alt Control + Baixa Perspectiva
+   - Negatiu: Micromanager
+   - Positiu: Implementador
+**** Bajo Control + Alta Perspectiva
+   - Negatiu: Creador boig
+   - Positiu: Visionari
+**** Bajo Control + Baja Perspectiva
+   - Negatiu: Autocomplacència
+   - Positiu: Comandant en cap
+** Dessign Thinking
+   1. Empatitza
+   2. Defineix
+   3. Idea
+   4. Prototipa
+   5. Testeja
+" >> bujo-ca-$ANO.org
 
-echo "* Dimensions"
-echo "** Control"
-echo "*** Capturar"
-echo "*** Aclarir"
-echo "*** Organitzar"
-echo "*** Reflexionar"
-echo "*** Comprometre's"
-echo "** Perspectiva"
-echo "*** Propòsits - Principis"
-echo "*** Visió"
-echo "*** Metes"
-echo "*** Àrees de responsabilitat"
-echo "*** Projectes"
-echo "*** Accions"
-echo "* Matriu d'autogestió"
-echo "** Bajo Control + Baja Perspectiva"
-echo "   - Negatiu: Víctima"
-echo "   - Positiu: Capacitat de resposta"
-echo "** Alt Control + Baixa Perspectiva"
-echo "   - Negatiu: Micromanager"
-echo "   - Positiu: Implementador"
-echo "** Bajo Control + Alta Perspectiva"
-echo "   - Negatiu: Creador boig"
-echo "   - Positiu: Visionari"
-echo "** Bajo Control + Baja Perspectiva"
-echo "   - Negatiu: Autocomplacència"
-echo "   - Positiu: Comandant en cap"
+################ ID
 
+echo "* Identificador" >> bujo-ca-$ANO.org
+echo " "
+echo "Espai pensat per identificar dades, persones, a les quals fer referència al llarg del document."
+echo "** Cotxe
+:PROPERTIES:
+:ID:    
+:MARCA:
+:MODEL:
+:MATRIC:
+:END:
+" >> bujo-ca-$ANO.org
 
 ############## Generar CALENDARI
 
@@ -663,23 +685,30 @@ while true; do
     
 done
 
-################ ID
-
-echo "* ID"
 
 ################ Projects
-echo "* Projects"
+
+echo "* Projectes" >> bujo-ca-$ANO.org
+echo " "
+echo "Espai pensat per descriure els projectes responent a les preguntes:
+     - Què
+     - Com
+     - Quan
+     - A on
+     - Per què
+ "
 
 ################ Col·leccions
 
-echo "** Links"
-echo "** Notes"
+echo "** Links" >> bujo-ca-$ANO.org
+echo "** Notes" >> bujo-ca-$ANO.org
+
 ################ Trackers
 
-echo "* Trackers"
+echo "* Trackers" >> bujo-ca-$ANO.org
 
 ################ Kanban
 
-echo "Kanban"
-echo "#+Begin: kanban"
-echo "#+END"
+echo "* Kanban
+#+Begin: kanban
+#+END" >> bujo-ca-$ANO.org

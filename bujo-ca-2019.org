@@ -6,6 +6,7 @@
 #+INFOJS_OPT: view:t toc:t ltoc:t mouse:underline buttons:0 path:https://ugeek.github.io/style-css-org-mode/org-info.min.js
 #+HTML_HEAD: <link rel=stylesheet type=text/css href=https://ugeek.github.io/style-css-org-mode/bjm.css />
 #+STARTUP: inlineimages
+
 * Index
 ** Claus
 *** TODO Tasca per fer
@@ -25,7 +26,7 @@
 
 El contingut de Bullet Journal Digital es basa en https://bulletjournal.com
 
-
+** Bullet Journal
     **Rapid Loggin** és l'idioma en què parla Bullet Journal, el qual consta de quatre components:
 
     - Temes
@@ -39,14 +40,59 @@ El contingut de Bullet Journal Digital es basa en https://bulletjournal.com
 
 
     *Bullet Journal Digital* utilitzant la metodologia *OrgMode* no és més que un intent de sistematitzar en un arxiu totes les dades possibles. Excepcionalment utilitzem arxius externs per a arxivar troços de text, per a capturar o per a incrustar bibliografia a partir d'un arxiu específic.
+
+** GTD
+*** Dimensions
+**** Control
+***** Capturar
+***** Aclarir
+***** Organitzar
+***** Reflexionar
+***** Comprometre's
+**** Perspectiva
+***** Propòsits - Principis
+***** Visió
+***** Metes
+***** Àrees de responsabilitat
+***** Projectes
+***** Accions
+*** Matriu d'autogestió
+**** Bajo Control + Baja Perspectiva
+   - Negatiu: Víctima
+   - Positiu: Capacitat de resposta
+**** Alt Control + Baixa Perspectiva
+   - Negatiu: Micromanager
+   - Positiu: Implementador
+**** Bajo Control + Alta Perspectiva
+   - Negatiu: Creador boig
+   - Positiu: Visionari
+**** Bajo Control + Baja Perspectiva
+   - Negatiu: Autocomplacència
+   - Positiu: Comandant en cap
+** Dessign Thinking
+   1. Empatitza
+   2. Defineix
+   3. Idea
+   4. Prototipa
+   5. Testeja
+
+* Identificador
+** Cotxe
+:PROPERTIES:
+:ID:    
+:MARCA:
+:MODEL:
+:MATRIC:
+:END:
+
 * Calendar
                             2019
       De gener             De febrer              De març         
 dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  
-       1  2  3  4  5                  1  2                  1  2  
+       1  2  3  4  5                  1 _ _2                  1  2  
  6  7  8  9 10 11 12   3  4  5  6  7  8  9   3  4  5  6  7  8  9  
 13 14 15 16 17 18 19  10 11 12 13 14 15 16  10 11 12 13 14 15 16  
-20 21 22 23 24 _2_5 26  17 18 19 20 21 22 23  17 18 19 20 21 22 23  
+20 21 22 23 24 25 26  17 18 19 20 21 22 23  17 18 19 20 21 22 23  
 27 28 29 30 31        24 25 26 27 28        24 25 26 27 28 29 30  
                                             31                    
                             2019
@@ -845,3 +891,10 @@ dg dl dt dc dj dv ds  dg dl dt dc dj dv ds  dg dl dt dc dj dv ds
 *** 29 de de desembre del 2019, diumenge
 *** 30 de de desembre del 2019, dilluns
 *** 31 de de desembre del 2019, dimarts
+* Projectes
+** Links
+** Notes
+* Trackers
+* Kanban
+#+Begin: kanban
+#+END
